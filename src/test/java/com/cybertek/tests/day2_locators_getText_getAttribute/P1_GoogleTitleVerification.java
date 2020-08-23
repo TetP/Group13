@@ -14,8 +14,14 @@ public class P1_GoogleTitleVerification {
 
         driver.get("https://www.google.com");
 
-        String title = driver.getTitle();
-        System.out.println("Title is: "+title);
+        String expectedTitle = "Google";
+        String actualTitle = driver.getTitle();
+
+        if (actualTitle.equalsIgnoreCase(expectedTitle)){
+            System.out.println("Title verification PASSED");
+        }else {
+            System.out.println("Title verification FAILED");
+        }
 
         driver.navigate().to("https://practice.cybertekschool.com");
         String url = driver.getCurrentUrl();
