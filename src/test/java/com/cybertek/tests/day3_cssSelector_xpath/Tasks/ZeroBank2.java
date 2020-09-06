@@ -1,8 +1,9 @@
-package com.cybertek.tests.day3;
+package com.cybertek.tests.day3_cssSelector_xpath.Tasks;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 /*
@@ -32,6 +33,24 @@ public class ZeroBank2 {
         }else {
             System.out.println("FAILED");
         }
+
+
+
+        //2. cozum yolu
+        WebElement zeroBankLinkTopLeft = driver.findElement(By.className("brand"));
+
+        String expectedLinkText="Zero Bank";
+        String actualLinkText=zeroBankLinkTopLeft.getText();
+
+        if (actualLinkText.equals(expectedLinkText)){
+            System.out.println("PASSED");
+        }else {
+            System.out.println("FAILED");
+        }
+
+
+
+
 
 
 
