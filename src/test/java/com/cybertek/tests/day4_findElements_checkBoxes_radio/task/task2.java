@@ -1,4 +1,4 @@
-package com.cybertek.tests.day4.task;
+package com.cybertek.tests.day4_findElements_checkBoxes_radio.task;
 
 import com.cybertek.tests.day3_cssSelector_xpath.WebDriverFactory;
 import org.openqa.selenium.*;

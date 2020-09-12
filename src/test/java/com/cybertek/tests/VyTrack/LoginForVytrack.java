@@ -19,26 +19,16 @@ public class LoginForVytrack {
         driver.findElement(By.id("prependedInput")).sendKeys("user163");
         driver.findElement(By.id("prependedInput2")).sendKeys("UserUser123"+ Keys.ENTER);
 
-        //driver.findElement(By.linkText("Fleet")).findElements(By.name("dropdown-menu-wrapper dropdown-menu-wrapper__placeholder"));
 
-        driver.get("https://qa2.vytrack.com/entity/Extend_Entity_Carreservation");
+        Thread.sleep(500);
+        driver.findElement(By.cssSelector("span[class='title title-level-1']")).click();
 
-
-
-        Thread.sleep(2000);
-        driver.findElement(By.linkText("Reset")).click();
+        Thread.sleep(500);
 
 
-
-        /*
-        driver.findElement(By.className("nav-multilevel main-menu")).findElement(By.className("dropdown dropdown-level-1")).findElement(By.className("title title-level-2")).click();
+        driver.findElement(By.linkText("Vehicles")).click();
 
 
-        WebElement dropDown=driver.findElement(By.className("dropdown dropdown-level-1"));
-        Select dropdown = new Select(dropDown);
-        dropdown.selectByIndex(1);
-
-         */
 
 
 
