@@ -1,6 +1,6 @@
 package com.cybertek.tests.day4_findElements_checkBoxes_radio;
 
-import com.cybertek.tests.day3_cssSelector_xpath.WebDriverFactory;
+import com.cybertek.Utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;

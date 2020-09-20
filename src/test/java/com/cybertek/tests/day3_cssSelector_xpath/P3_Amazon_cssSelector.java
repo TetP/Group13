@@ -1,5 +1,6 @@
 package com.cybertek.tests.day3_cssSelector_xpath;
 
+import com.cybertek.Utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -18,7 +19,7 @@ public class P3_Amazon_cssSelector {
 
         //1. Open Chrome browser
         //2. Go to https://www.amazon.com
-        WebDriver driver=WebDriverFactory.getDriver("chrome");
+        WebDriver driver= WebDriverFactory.getDriver("chrome");
         driver.get("https://www.amazon.com/");
 
         //3. Enter search term (use cssSelectorto locate search box)

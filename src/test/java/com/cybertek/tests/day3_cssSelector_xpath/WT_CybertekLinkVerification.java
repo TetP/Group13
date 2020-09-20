@@ -1,5 +1,6 @@
 package com.cybertek.tests.day3_cssSelector_xpath;
 
+import com.cybertek.Utilities.WebDriverFactory;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -22,7 +23,7 @@ public class WT_CybertekLinkVerification {
         //WebDriverManager.chromedriver().setup();
         //WebDriver driver=new ChromeDriver();
 
-        WebDriver driver=WebDriverFactory.getDriver("chrome");
+        WebDriver driver= WebDriverFactory.getDriver("chrome");
 
         //2.Go to http://practice.cybertekschool.com/forgot_password
         driver.get("http://practice.cybertekschool.com/forgot_password");
