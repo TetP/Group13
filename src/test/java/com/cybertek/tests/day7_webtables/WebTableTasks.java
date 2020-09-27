@@ -44,6 +44,7 @@ public class WebTableTasks {
         //    3. Verify Susan McLaren has order on date “01/05/2010”
 
         WebElement susanDate=driver.findElement(By.xpath("//table[@id='ctl00_MainContent_orderGrid']//tr[6]/td[5]"));
+        //WebElement susansDate = driver.findElement(By.xpath("//td[.='Susan McLaren']/following-sibling::td[3]"));
 
         String expectedDate="01/05/2010";
         String actualDate=susanDate.getText();
