@@ -70,6 +70,38 @@ public class AlertPractices {
     }
 
 
+    //TC #3: Information alert practice
+    @Test
+    public void informationAlertPractice2(){
+
+        // 3.Click to “Click for JS Prompt” button
+        driver.findElement(By.xpath("//button[.='Click for JS Prompt']")).click();
+
+        BrowserUtils.wait(2);
+
+        // 4.Send “hello”text to alert
+        Alert alert=driver.switchTo().alert();
+        BrowserUtils.wait(2);
+        alert.sendKeys("hello");
+        BrowserUtils.wait(2);
+        alert.accept();
+
+
+        BrowserUtils.wait(2);
+
+        // 5.Click to OK button from the alert
+
+        // 6.Verify “You entered:  hello” text is displayed.
+        String resultText=driver.findElement(By.xpath("//p[@id='result']")).getText();
+        String expectedResult="You entered: hello";
+
+        Assert.assertEquals(resultText,expectedResult);
+
+    }
+
+
+
+
 
 
 
