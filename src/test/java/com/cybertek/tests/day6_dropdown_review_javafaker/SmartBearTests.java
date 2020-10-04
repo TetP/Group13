@@ -48,8 +48,8 @@ public class SmartBearTests {
 
         //5. Click to Login button
         driver.findElement(By.id("ctl00_MainContent_login_button")).click();
-
          */
+
 
         //6. Print out count of all the links on landing page
         List<WebElement> allLinks = driver.findElements(By.xpath("//body//a"));
