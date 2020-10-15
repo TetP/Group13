@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="seleniumProjectB20" />
+        <module name="seleniumProjectGroup13" />
+        <module name="Group13" />
       </profile>
     </annotationProcessing>
   </component>
